@@ -7,7 +7,7 @@ $email = mysqli_real_escape_string($con, $email);
 
 $pass = $_POST['password'];
 $pass = mysqli_real_escape_string($con, $pass);
-$pass = md5($pass);
+// $pass = md5($pass);
 
 $first = $_POST['firstName'];
 $first = mysqli_real_escape_string($con, $first);

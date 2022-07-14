@@ -8,6 +8,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fashion</title>
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
@@ -114,8 +115,5 @@ $('#login').modal('show');
 });
 </script>";
     echo "<script type='text/javascript'>alert('" . $z . "')</script>";}?>
-
-
-
 
 </html>

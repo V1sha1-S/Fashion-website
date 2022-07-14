@@ -3,7 +3,7 @@
 <!--Navigation bar start-->
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color:rgba(0,0,0,0.5)">
             <div class="container">
-                    <a href="index.php" class="navbar-brand" style="font-family: 'Delius Swash Caps'">Planet Shopify</a>
+                    <a href="index.php" class="navbar-brand" style="font-family: 'Delius Swash Caps'" >FASHION</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -76,10 +76,10 @@
                     <label for="pwd">Password:</label>
                     <input type="password" class="form-control" id="pwd"  name="lpassword" placeholder="Password" required>
                 </div>
-                <div class="form-check">
+                <!-- <div class="form-check">
                     <input type="checkbox" class="form-check-input">
                     <label for="checkbox" class="form-check-label">Check me out</label>
-                </div>
+                </div> -->
                 <button type="submit" class="btn btn-secondary btn-block" name="Submit">Login</button>
               </form>
               <a href="http://">forgot password ?</a>

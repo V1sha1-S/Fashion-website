@@ -17,102 +17,77 @@ session_start();
   <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="column.css">
 </head>
 <body style="overflow-x:hidden; padding-bottom:100px;">
   <?php
         include 'includes/header_menu.php';
     ?>
   <div>
-    <div class="container mt-5 ">
-      <div class="row justify-content-around">
-        <div class="col-md-5 mt-3">
-          <h3 class="text-warning pt-3 title">Who We Are ?</h3>
-          <hr />
-          <img
-            src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=400&q=80"
-            class="img-fluid d-block rounded mx-auto image-thumbnail">
-          <p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed atque, consequuntur cumque odit
-            sapiente blanditiis, expedita ipsam molestiae voluptates reprehenderit ea modi eaque rerum dicta dolores,
-            iusto ullam aliquid non?
-            Quidem quae odio nemo cumque consectetur natus doloremque voluptatem consequatur voluptate laboriosam, amet
-            maiores excepturi sunt aliquid magni voluptatibus aperiam laudantium dolores reiciendis? Laborum laboriosam,
-            nam ullam totam amet et.
-            Earum recusandae voluptate accusantium, placeat alias consequuntur aspernatur sed explicabo impedit et aut
-            assumenda hic repellendus esse facere ratione quod vitae laudantium. Obcaecati nobis sequi esse assumenda,
-            rerum dolores pariatur.</p>
-        </div>
-        <div class="col-md-5 mt-3">
-          <span class="text-warning pt-3">
-            <h1 class="title">LIVE SUPPORT</h1>
-            <h3>24 hours|7 days a week| 365 days a year Live Technical Support</h3>
-          </span>
-          <hr>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters. There are many variations of passages of Lorel Ipsum available, but the majority have suffered
-            alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-            hidden in the middle of text.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam ducimus a illum, at voluptate, iusto
-            eos tempora in quam exercitationem officia autem maxime deserunt. Reprehenderit necessitatibus sequi in
-            fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, facilis. Reiciendis dicta fuga esse
-            at excepturi inventore perferendis? Consequatur dicta blanditiis, magnam consequuntur possimus excepturi
-            eaque neque nulla libero temporibus!
-          </p>
+  
+<section id="about" class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h6 class="sub-title">A Little More About Us</h6>
+                            <h6>On our we give fashion forward men, quick access to the finest, premium-quality, designer clothes for men. Not only that, our online selection is comprised of versatile, exclusive and unique looks made with you in mind. You can always be confident, not only when wearing our shirts, but in our unrivaled customer service and affordable premium quality collections fresh off the catwalk..</h6>
+                            <h4 class="title">Frequently Asked Questions <br> About Our Site</h4>
+                        </div> <!-- faq title -->
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Do I need to create an account to place an order?</a>
+                                    </div>
 
-        </div>
-        <!-- <div class="about-section">
-          <h1>About Us Page</h1>
-          <p>Some text about who we are and what we do.</p>
-          <p>Resize the browser window to see that this page is responsive by the way.</p>
-        </div>
-        <h2 style="text-align:center">Our Team</h2>
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="container">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>jane@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-              <div class="container">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-              <div class="container">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-    </div>
-  </div> -->
-</div>
-    <!-- <div class="sm:w-1/2 p-5">
-        <div class="text">
-            <span class="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>
-            <h2 class="my-4 font-bold text-3xl  sm:text-4xl ">About <span class="text-indigo-600">Our Company</span></h2>
-            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat quia, repellat tempore voluptatum.</p>
-        </div>
-    </div>
-</div> -->
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">However, sign up with us and you’ll be able to enjoy the following benefits:
+                                              <ul>
+                                                <li>Track your orders and review past purchases</li>
+                                                <li>Request a return or exchange directly from your account</li>
+                                                <li>Add items and products you love that have been sold out for us to notify you once restocked</li>
+                                                <li>Save your address & credit card information so you can shop even quicker next time</li>
+                                              </ul>
+                                            </p>
+                                        </div>
+                                    </div> 
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How long does delivery take, and what are the charges?</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">Delivery time frame is between 5-14 working days and is FREE for INDIA.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I track my order?</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="text">Once your order has been dispatched, you will be contacted by the shipping company for delivery of your package. If you have any other concerns you can always contact the customer service team.</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- card -->
+                            </div>
+                        </div> <!-- faq accordion -->
+                    </div> <!-- faq content -->
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-image mt-50">
+                        <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=400&q=80"
+            class="img-fluid d-block rounded mx-auto image-thumbnail">
+                    </div> <!-- faq image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
 
       </div>
     </div>

@@ -1,55 +1,93 @@
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.about-area {
+	padding-top: 80px;
+	padding-bottom: 130px;
+	position: relative;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+.about-area .about-title .sub-title {
+	font-size: 18px;
+	font-weight: 400;
+	color: #0067f4;
+	text-transform: uppercase;
 }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
+@media (max-width: 767px) {
+	.about-area .about-title .sub-title {
+		font-size: 16px;
+	}
 }
 
-.container {
-  padding: 0 16px;
+.about-area .about-title .title {
+	font-size: 30px;
+	padding-top: 10px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.about-area .about-title .title {
+		font-size: 26px;
+	}
 }
 
-.title {
-  color: grey;
+@media (max-width: 767px) {
+	.about-area .about-title .title {
+		font-size: 22px;
+	}
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+.about-area .about-accordion .accordion .card {
+	border: 0;
+	background: none;
 }
 
-.button:hover {
-  background-color: #555;
+.about-area .about-accordion .accordion .card .card-header {
+	padding: 0;
+	border: 0;
+	background: none;
+	margin-top: 40px;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.about-area .about-accordion .accordion .card .card-header a {
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+	display: block;
+	position: relative;
+	padding-right: 20px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.about-area .about-accordion .accordion .card .card-header a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.about-area .about-accordion .accordion .card .card-header a {
+		font-size: 16px;
+	}
+}
+
+.about-area .about-accordion .accordion .card .card-header a::before {
+	content: '\ea58';
+	font-family: 'LineIcons';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.about-area .about-accordion .accordion .card .card-header .collapsed::before {
+	content: '\ea5c';
+}
+
+.about-area .about-accordion .accordion .card .card-body {
+	padding: 20px 20px 0;
+}
+
+.about-area .about-image img {
+	width: 100%;
 }

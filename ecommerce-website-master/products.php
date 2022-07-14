@@ -24,8 +24,8 @@ include 'includes/check-if-added.php';
 <div class="container" style="margin-top:65px">
          <!--jumbutron start-->
         <div class="jumbotron text-center">
-            <h1>Welcome to Planet Shopify!</h1>
-            <p>We have wide range of products for you.No need to hunt around,we have all in one place</p>
+            <h1>Welcome to Fashion Website</h1>
+            <p>We have wide range of products for you. No need to hunt around,we have all in one place</p>
         </div>
         <!--jumbutron ends-->
         <!--breadcrumb start-->
@@ -45,6 +45,94 @@ include 'includes/check-if-added.php';
                 <div class="figure-caption">
                     <h6>Guess 1875</h6>
                     <h6>Price :Rs 3000</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(1)) {
+                     echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                        ?>
+                        <p><a href="cart-add.php?id=1" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a><p>
+                        <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 py-2">
+            <div class="card">
+                <img src="images/watch3.jpg" alt="" class="img-fluid pb-1" >
+                <div class="figure-caption">
+                    <h6>LIGE</h6>
+                    <h6>Price :Rs 5000</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(1)) {
+                     echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                        ?>
+                        <p><a href="cart-add.php?id=1" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a><p>
+                        <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 py-2">
+            <div class="card">
+                <img src="images/watch2.jpg" alt="" class="img-fluid pb-1" >
+                <div class="figure-caption">
+                    <h6>Casio</h6>
+                    <h6>Price :Rs 10000</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(1)) {
+                     echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                        ?>
+                        <p><a href="cart-add.php?id=1" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a><p>
+                        <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 py-2">
+            <div class="card">
+                <img src="images/watch4.jpg" alt="" class="img-fluid pb-1" >
+                <div class="figure-caption">
+                    <h6>Citizen</h6>
+                    <h6>Price :Rs 3000</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(1)) {
+                     echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                        ?>
+                        <p><a href="cart-add.php?id=1" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a><p>
+                        <?php
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 py-2">
+            <div class="card">
+                <img src="./images/watch1.jpg" alt="" class="img-fluid pb-1" >
+                <div class="figure-caption">
+                    <h6>Diesel</h6>
+                    <h6>Price :Rs 6000</h6>
                     <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                     <?php
@@ -129,6 +217,94 @@ include 'includes/check-if-added.php';
         </div>
     </div>
     <div class="row text-center" id="shirt">
+            <div class="col-md-3 col-6 py-3" >
+                <div class="card">
+                    <img src="images/shirt1.jpg" alt="" class="img-fluid pb-1"  >
+                    <div class="figure-caption">
+                    <h6>Levis-high</h6>
+                    <h6>Price :Rs 5000</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                        if (check_if_added_to_cart(5)) {
+                        echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                        } else {
+                        ?>
+                        <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                        <?php
+                        }
+                    }
+                    ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 py-3" >
+                <div class="card">
+                    <img src="images/shirt4.jpg" alt="" class="img-fluid pb-1"  >
+                    <div class="figure-caption">
+                    <h6>Roadster</h6>
+                    <h6>Price :Rs 3800</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                        if (check_if_added_to_cart(5)) {
+                        echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                        } else {
+                        ?>
+                        <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                        <?php
+                        }
+                    }
+                    ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 py-3" >
+                <div class="card">
+                    <img src="images/shirt3.jpg" alt="" class="img-fluid pb-1"  >
+                    <div class="figure-caption">
+                    <h6>Calvin klein</h6>
+                    <h6>Price :Rs 4200</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                        if (check_if_added_to_cart(5)) {
+                        echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                        } else {
+                        ?>
+                        <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                        <?php
+                        }
+                    }
+                    ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 py-3" >
+                <div class="card">
+                    <img src="images/shirt2.jpg" alt="" class="img-fluid pb-1"  >
+                    <div class="figure-caption">
+                    <h6>King suit</h6>
+                    <h6>Price :Rs 2000</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                        if (check_if_added_to_cart(5)) {
+                        echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                        } else {
+                        ?>
+                        <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                        <?php
+                        }
+                    }
+                    ?>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-3 col-6 py-3" >
                 <div class="card">
                     <img src="images/shirt1.jpg" alt="" class="img-fluid pb-1"  >
@@ -224,7 +400,95 @@ include 'includes/check-if-added.php';
                         <img src="images/shoe1.jpg" alt="" class="img-fluid pb-1">
                         <div class="figure-caption">
                             <h6>Nike White Sneaker</h6>
+                            <h6>Price :Rs 5000</h6>
+                            <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(9)) {
+                    echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                    ?>
+                    <p><a href="cart-add.php?id=9" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                    <?php
+                    }
+                    }
+                    ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-3">
+                    <div class="card">
+                        <img src="images/shoe3.jpg" alt="" class="img-fluid pb-1">
+                        <div class="figure-caption">
+                            <h6>Nike Air Max Sneaker</h6>
+                            <h6>Price :Rs 7000</h6>
+                            <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(9)) {
+                    echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                    ?>
+                    <p><a href="cart-add.php?id=9" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                    <?php
+                    }
+                    }
+                    ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-3">
+                    <div class="card">
+                        <img src="images/shoe2.jpg" alt="" class="img-fluid pb-1">
+                        <div class="figure-caption">
+                            <h6>Nike Air White Sneaker</h6>
+                            <h6>Price :Rs 10000</h6>
+                            <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(9)) {
+                    echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                    ?>
+                    <p><a href="cart-add.php?id=9" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                    <?php
+                    }
+                    }
+                    ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-3">
+                    <div class="card">
+                        <img src="images/shoe4.jpg" alt="" class="img-fluid pb-1">
+                        <div class="figure-caption">
+                            <h6>Nike Jorden Sneaker</h6>
                             <h6>Price :Rs 8000</h6>
+                            <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                    if (check_if_added_to_cart(9)) {
+                    echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                    } else {
+                    ?>
+                    <p><a href="cart-add.php?id=9" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                    <?php
+                    }
+                    }
+                    ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-3">
+                    <div class="card">
+                        <img src="images/shoe3.jpg" alt="" class="img-fluid pb-1">
+                        <div class="figure-caption">
+                            <h6>Nike White Sneaker</h6>
+                            <h6>Price :Rs 4500</h6>
                             <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                     <?php
@@ -265,9 +529,9 @@ include 'includes/check-if-added.php';
                 </div>
                 <div class="col-md-3 col-6 py-3">
                     <div class="card">
-                        <img src="images/shoe3.jpg" alt="" class="img-fluid pb-1">
+                        <img src="images/shoe1.jpg" alt="" class="img-fluid pb-1">
                         <div class="figure-caption">
-                            <h6>Nike Yellow Sneaker</h6>
+                            <h6>Nike Sneaker</h6>
                             <h6>Price :Rs 7000</h6>
                             <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
